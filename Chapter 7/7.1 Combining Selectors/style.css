@@ -1,0 +1,21 @@
+/* Write your code here: */
+h1, h2 {
+    color: blueviolet;
+}
+/* First child selector */
+.box > .done {
+    color: firebrick;
+}
+/* Descendant Selectors */
+.box li {
+    color: blue;
+}
+/* Chaining Selectors */
+li.done { 
+    color: seagreen;
+}
+
+ /* combining with chaining */
+ul p.done {
+    font-size: 0.5rem;
+ }
