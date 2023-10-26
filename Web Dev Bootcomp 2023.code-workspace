@@ -101,6 +101,12 @@
 		},
 		{
 			"path": "Chapter 10/10.3 Mondrian Project"
+		},
+		{
+			"path": "Chapter 11/11.0 Bootstrap Intro"
+		},
+		{
+			"path": "Chapter 11/11.2 Bootstrap Components"
 		}
 	],
 	"settings": {}
