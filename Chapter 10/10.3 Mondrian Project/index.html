@@ -19,11 +19,77 @@
     HINT: Remember you can't change the properties of grid lines.
     But grid lines are transparent!
     */
-  </style>
-</head>
 
+    .container {
+      /* background-color: green; */
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .grid-container {
+      background-color: #000;
+      display: grid;
+      grid-template-rows: 414px 135px 160px 20px;
+      grid-template-columns: 320px 198px 153px 50px;
+      gap: 9px;
+    }
+    .grid-container2 {
+      background-color: #000;
+      display: grid;
+
+    }
+    .red {
+      background-color: red;
+    }
+    .top.white {
+      background-color:#F0F1EC;
+      grid-column: span 3;
+    }
+    .mid.white {
+      background-color:#F0F1EC;
+      grid-row: span 2;
+    }
+    .right.white {
+      background-color:#F0F1EC;
+      grid-row: span 2;
+      grid-column: span 2;
+    }
+    .blue {
+      background-color:#004592;
+      border-bottom: 10px black solid;
+    }
+    .bot-right-white {
+      background-color:#F0F1EC;
+      grid-row: span 2;
+    }
+    .bot-left-white {
+      background-color:#F0F1EC;
+    }
+    .bot-mid-white {
+      background-color:#F9D01E;
+    }
+    .bot-midright-black {
+      background-color:#232629;
+    }
+  </style>
+</head> 
 <body>
   <!-- Write your HTML here -->
+  <div class="container">  
+    <div class="grid-container">
+        <div class = "top red" ></div>
+        <div class = "top white" ></div>
+        <div class = "mid white" ></div>
+        <div class = "right white" ></div>
+        <div class = "blue" ></div>
+        <div class = "bot-right-white" ></div>
+        <div class = "bot-left-white"></div>
+        <div class = "bot-mid-white"></div>
+        <div class = "bot-midright-black"></div>
+    </div>
+  </div>
+      
 </body>
 
 </html>
