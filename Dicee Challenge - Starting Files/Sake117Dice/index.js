@@ -126,6 +126,9 @@ function rolldiceP2()
 let outputOne = rolldiceP1();
 let outputTwo = rolldiceP2();
 
+document.querySelectorAll(".borderp1, .borderp2").forEach(element => {
+    element.style.border = "none";
+});
 if(outputOne === outputTwo )
 {
     document.querySelector("#sub-header").textContent = "Draw"
@@ -133,8 +136,10 @@ if(outputOne === outputTwo )
 else if (outputOne > outputTwo)
 {
     document.querySelector("#sub-header").textContent = "P1 Wins"
+    document.querySelector(".borderp1").style.border = "2px solid"
 }
 else{
 
     document.querySelector("#sub-header").textContent = "P2 Wins"
+    document.querySelector(".borderp2").style.border = "2px solid"
 }

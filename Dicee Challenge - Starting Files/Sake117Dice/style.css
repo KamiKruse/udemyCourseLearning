@@ -9,24 +9,42 @@
     min-height: 100vh;
     display: grid;
     text-align: center;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 300px 1fr;
-    gap: 1rem;
-    /*  */
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 300px 100px 1fr;
 }
 
 #header {
-    grid-column: 1 / 5;
+    grid-column: 1 / 4;
     display: grid;
     place-content: center;
+    padding-top: 150px;
     padding-bottom: 150px;
     cursor: pointer;
+    font-family: 'Righteous', sans-serif;
+    font-size: 10rem;
+    letter-spacing: 10px;
+    color: rgb(255, 196, 0);
+}
+
+#sub-header {
+    grid-column: 1 / 4;
+    font-family: 'Linden Hill', serif;
+    font-size: 3rem;
+    color: rgb(255, 247, 0);
 }
 .dice {
     margin-inline: auto;
+    padding-left: 200px;
+    padding-right: 200px;
+    font-family: 'Linden Hill', serif;
+    font-size: 3rem;
     
 }
 
+.borderp1, .borderp2 {
+    color: rgb(255, 247, 0);
+    border: 2px solid;
+}
 .box {
     background-color: crimson;
     height: 300px;
