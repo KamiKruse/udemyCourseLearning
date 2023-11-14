@@ -3,7 +3,9 @@ let buttonLength = document.querySelectorAll(".drum")
 for(let i=0; i<buttonLength.length; i++)
 {
     buttonLength[i].addEventListener("click", function(){
-        alert("I got licked");
+        // let audio = new Audio("sounds/tom-1.mp3")
+        // audio.play();
+        this.style.color = "white"
     });
 
 }   
